@@ -1,0 +1,64 @@
+<div class="ui-fluid">
+    <div class="ui-g">
+        <div class="ui-g-12">
+            <div class="card card-w-title">
+                <h1>Consultar Pedidos Segmentados</h1>
+                <div class="ui-g form-group">
+                     <div class="ui-g-12 ui-md-4">
+                        <p-dropdown id="dropdown" [options]="filteredAnimal" [(ngModel)]="segmentadoToFilter.animal.id"
+                        (onChange)="onAnimalSelect($event)" [autoWidth]="false"></p-dropdown>
+                    </div>
+
+                     <div class="ui-g-12 ui-md-3">
+                        <button type="button" (click)="buscar()"    icon="ui-icon-search" pButton></button>
+
+                    </div>
+
+
+
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+
+        </div>
+
+
+    <div class="ui-g-12">
+        <div class="card card-w-title">
+            <h1>Lista de Pedido por Tipo de Alimento </h1>
+            <p-dataTable [value]="segmentados"   selectionMode="single"   (onRowSelect)="onRowSelect($event)"
+                [paginator]="true" [rows]="10" [responsive]="true">
+                <header></header>
+                <p-column field="id" header="Codigo Segmentado" [sortable]="true"></p-column>
+                <p-column field="tipo_alimento.id" header="Codigo Tipo Alimento" [sortable]="true"></p-column>
+                <p-column field="tipo_alimento.descripcion" header="Descripción Tipo Alimento" [sortable]="true"></p-column>
+                <p-column field="peso_total" header="Cantidad (KG)" [sortable]="true"></p-column>
+                <p-column field="estado" header="Estado" [sortable]="true"></p-column>
+
+            </p-dataTable>
+
+                <footer>
+                  <div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix" >
+                    <button type="button" pButton  (click)="seleccionar()" label="Seleccionar"></button>
+                    <button type="button" pButton  (click)="cancelar()" label="Cancelar"></button>
+                  </div>
+                </footer>
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+    </div>
+</div>

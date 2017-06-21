@@ -1,0 +1,126 @@
+<div class="ui-fluid">
+    <div class="ui-g">    
+
+      <div  class="ui-g-12">
+            <div  class="card card-w-title" >
+                <h1>Buscar Alimento</h1>
+                <p-messages [value]="msgsError"></p-messages>
+                <p-growl [value]="msgs" sticky="sticky"></p-growl>
+                 
+                <div class="ui-g form-group">
+                  
+                    <div class="ui-g-12 ui-md-4">
+                    <span class="md-inputfield">
+                            <input type="text" pInputText name="new_description" [(ngModel)]="new_description">
+                        <label>Ingrese valor</label>
+                        
+                    </span>     
+                    </div>
+                  <div class="ui-g-12 ui-md-2">
+                         <button type="button" (click)="getListDescriptionLike()"    icon="ui-icon-search" pButton></button>
+                         <button type="button" (click)="displayAdd=true"   icon="ui-icon-add" pButton></button>
+
+                     
+                      <p-dialog header="Agregar Alimento" [(visible)]="displayAdd" modal="modal" showEffect="fade" width="600">
+                        <div class="ui-g form-group">
+                           
+                           <div class="ui-g-12 ui-md-12">
+                             <span class="md-inputfield">
+                                 <input type="text" pInputText name="new_kinship" [(ngModel)]="new_kinship">
+                                <label>Nombre</label><div class="ui-message ui-messages-error ui-corner-all">(*)</div>
+                             </span>
+                           </div>
+             
+                
+                        </div>
+
+                        <footer>
+                            <div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix">
+                            <button type="button" icon="ui-icon-cancel" (click)="cancel()" label="Cancelar" pButton></button>
+                            <button type="button" icon="ui-icon-save"   (click)="add(new_kinship)"    label="Guardar"  pButton></button>
+                           </div>
+                        </footer>
+                      </p-dialog>
+                  </div>
+
+                </div>
+
+            
+              </div>
+
+      
+        </div>
+
+
+    <div class="card">
+        <div class="card card-w-title">
+            <h1>Lista de  Animales</h1>
+            <p-dataTable [value]="kinships"   selectionMode="single"  (onRowSelect)="onRowSelect($event)" [(selection)]="selectedKinshipType" 
+                [paginator]="true" [rows]="10" [responsive]="true">
+                <header></header>
+                <p-column field="id_animal" header="Id" [sortable]="true"></p-column>
+                <p-column field="descripcion" header="Descripcion" [sortable]="true"></p-column>
+
+
+                
+                <p-column field="" header="Editar" >
+                   <template pTemplate let-col let-node="rowData" let-rowIndex="rowIndex">
+                      <button type="button" (click)="update(node)"   icon="ui-icon-edit" pButton></button>
+                         <div class="ui-g-12 ui-md-2">
+
+                      <p-dialog header="Editar Animal" [(visible)]="displayEdit" modal="modal" showEffect="fade" width="600">
+                        <div class="ui-g form-group">
+                           
+                           <div class="ui-g-12 ui-md-12">
+                             <span class="md-inputfield">
+                                 <input type="text" pInputText name="edit_kinship" [(ngModel)]="edit_kinship">
+                                <label>Nombre</label><div class="ui-message ui-messages-error ui-corner-all">(*)</div>
+                             </span>
+                           </div>
+             
+                
+                        </div>
+
+                        <footer>
+                            <div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix">
+                            <button type="button" icon="ui-icon-cancel" (click)="cancel()" label="Cancelar" pButton></button>
+                            <button type="button" icon="ui-icon-save"   (click)="editSave()"    label="Guardar"  pButton></button>
+                           </div>
+                        </footer>
+                      </p-dialog>
+                  </div>
+
+
+
+                    </template>
+                </p-column>
+
+                <p-column field="" header="Eliminar"  >
+                    <template pTemplate let-col let-node="rowData">
+                         <button type="button" (click)="confirm(node)"  icon="ui-icon-clear" pButton></button>
+
+                                <p-dialog header="Confirmación" [(visible)]="displayDelete" modal="modal" showEffect="fade" width="400">
+                                <p><label>{{messageModal}}</label></p>
+                                <footer>
+                                <div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix">
+                                <button type="button" pButton icon="fa-close" (click)="cerrar(0)" label="No"></button>
+                                <button type="button" pButton icon="fa-check" (click)="delete()" label="SI"></button>
+                                </div>
+                                </footer>
+                                </p-dialog>
+
+
+                
+                    </template>
+                  </p-column>
+
+
+                
+            </p-dataTable>
+
+        </div>
+    </div>
+       
+
+
+</div>

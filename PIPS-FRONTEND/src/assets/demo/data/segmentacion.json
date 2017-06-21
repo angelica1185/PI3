@@ -1,0 +1,11 @@
+
+{
+    "data": [
+  
+        {"CodigoSegmentado": "1","CodigoTipoAlimento": "1", "Nombre": "CUY INTEGRAL INICIO", "Cantidad": 2400, "Estado": "PENDIENTE" },
+        {"CodigoSegmentado": "2","CodigoTipoAlimento": "2", "Nombre": "CUY INTEGRAL ACABADO", "Cantidad": 2000, "Estado": "PENDIENTE" },
+        {"CodigoSegmentado": "3","CodigoTipoAlimento": "3", "Nombre": "CUY INTEGRAL REPRODUCTOR", "Cantidad": 3760, "Estado": "PENDIENTE" },
+        {"CodigoSegmentado": "4","CodigoTipoAlimento": "4", "Nombre": "TILAPIA CRECIMIENTO", "Cantidad": 1000, "Estado": "PENDIENTE" }
+       
+    ]
+}

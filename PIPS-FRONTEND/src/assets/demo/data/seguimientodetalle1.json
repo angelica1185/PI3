@@ -1,0 +1,14 @@
+
+{
+
+    "data": [
+  
+        {"Fecha": "02/03/2016  09:00:00", "Interés": "MARKETING PARA EL SECTOR TURISMO-LCBP", "Respuesta": "No puede", "DetalleRespuesta": "Próximo Inicio Junio" , "TipoSeguimiento": "Llamada Saliente" ,"Usuario": "ABEDOYAS", "Vendedor": "ABEDOYAS"},
+       
+        {"Fecha": "21/02/2016  09:00:00", "Interés": "MARKETING PARA EL SECTOR TURISMO-LCBP", "Respuesta": "Se inscribirá", "DetalleRespuesta": "Se inscribirá  5 marzo enviara documentos" , "TipoSeguimiento": "Llamada Saliente" ,"Usuario": "ABEDOYAS", "Vendedor": "ABEDOYAS"},
+       
+        {"Fecha": "05/02/2016  11:00:00", "Interés": "MARKETING PARA EL SECTOR TURISMO-LCBP", "Respuesta": "En espera", "DetalleRespuesta": "Revisará se envío info" , "TipoSeguimiento": "Llamada Entrante" ,"Usuario": "JFLORESH", "Vendedor": "JFLORESH"}
+       
+       
+    ]
+}

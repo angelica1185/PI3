@@ -1,0 +1,13 @@
+
+{
+    "data": [
+  
+        {"Código": "C0090","Fecha": "05/02/2017", "Pais": "PE", "Nombres": "ADDERLY SANCHEZ COPARA", "TipoDoc": "DNI" , "NroDoc": 45086734 , "Campaña": "MASTER 2017", "Celular": "946161853" ,"Email": "asanchez@gmail.com", "Usuario": "JFLORESH", "Vendedor": "JFLORESH"},
+        {"Código": "C0091","Fecha": "05/02/2017", "Pais": "PE", "Nombres": "JUAN BEDOYA GARCIA", "TipoDoc": "DNI" ,"NroDoc": 48086734 , "Campaña": "MASTER 2017", "Celular": "946161853", "Email": "asanchez@gmail.com", "Usuario": "JFLORESH", "Vendedor": "JFLORESH"},
+        {"Código": "C0092","Fecha": "05/02/2017", "Pais": "PE", "Nombres": "PABLO SIERRALTA LOPEZ", "TipoDoc": "DNI" ,"NroDoc": 46086734 , "Campaña": "MASTER 2017","Celular": "946161853", "Email": "asanchez@gmail.com", "Usuario": "JFLORESH", "Vendedor": "JFLORESH"},
+        {"Código": "C0093","Fecha": "05/02/2017", "Pais": "PE", "Nombres": "KARINA MEDINA ATALAYA", "TipoDoc": "DNI" ,"NroDoc": 47086734 , "Campaña": "MASTER 2017","Celular": "946161853", "Email": "asanchez@gmail.com", "Usuario": "JFLORESH", "Vendedor": "JFLORESH"},
+        {"Código": "C0094","Fecha": "05/02/2017", "Pais": "PE", "Nombres": "PEDRO TALLEDO GARCEZ", "TipoDoc": "DNI" ,"NroDoc": 41086734 , "Campaña": "MASTER 2017","Celular": "946161853", "Email": "asanchez@gmail.com", "Usuario": "JFLORESH", "Vendedor": "JFLORESH"},
+        {"Código": "C0095","Fecha": "05/02/2017", "Pais": "PE", "Nombres": "GIAN HURTADO LARCO", "TipoDoc": "DNI" ,"NroDoc": 42086734 , "Campaña": "MASTER 2017","Celular": "946161853", "Email": "asanchez@gmail.com", "Usuario": "JFLORESH", "Vendedor": "JFLORESH"},
+        {"Código": "C0096","Fecha": "05/02/2017", "Pais": "PE", "Nombres": "JOSE MANUEL SALVADOR", "TipoDoc": "DNI" ,"NroDoc": 42236734 , "Campaña": "MASTER 2017","Celular": "946161853", "Email": "asanchez@gmail.com", "Usuario": "JFLORESH", "Vendedor": "JFLORESH"}
+    ]
+}

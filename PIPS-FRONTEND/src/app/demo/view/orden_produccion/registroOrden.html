@@ -1,0 +1,182 @@
+<div class="ui-fluid">
+    <div class="ui-g">
+        <div class="ui-g-12">
+            <div class="card card-w-title">
+
+                   <p-growl [value]="msgs" sticky="sticky"></p-growl>
+                <h1>Registro de Orden de Produccion</h1>
+
+
+                <div class="ui-g form-group">
+
+                    <div class="ui-g-12 ui-md-3">
+                        <label for="input">Codigo de Tipo Alimento</label>
+                    </div>
+                    <div class="ui-g-12 ui-md-3">
+                        <span class="md-inputfield">
+                            <input id="input" type="text" pInputText/>
+
+                        </span>
+                    </div>
+
+
+                    <div class="ui-g-12 ui-md-3">
+                        <label for="input">Descripcion</label>
+                    </div>
+                    <div class="ui-g-12 ui-md-3">
+                        <span class="md-inputfield">
+                            <input id="input" type="text" pInputText/>
+
+                        </span>
+                    </div>
+
+
+                     <div class="ui-g-12 ui-md-3">
+                        <label for="input">Cantidad Kilogramos</label>
+                    </div>
+                    <div class="ui-g-12 ui-md-3">
+                        <span class="md-inputfield">
+                            <input id="input" type="text" pInputText/>
+
+                        </span>
+                    </div>
+
+
+                    <div class="ui-g-12 ui-md-3">
+                        <label for="input">Molde</label>
+                    </div>
+                    <div class="ui-g-12 ui-md-3">
+                        <span class="md-inputfield">
+                            <input id="input" type="text" pInputText/>
+
+                        </span>
+                    </div>
+
+
+                  <div class="ui-g-12 ui-md-3">
+                        <label for="input">Nro de Sacos</label>
+                    </div>
+                    <div class="ui-g-12 ui-md-3">
+                        <span class="md-inputfield">
+                            <input id="input" type="text" pInputText/>
+
+                        </span>
+                    </div>
+
+
+                    <div class="ui-g-12 ui-md-3">
+                        <label for="input">Nro Batch</label>
+                    </div>
+                    <div class="ui-g-12 ui-md-3">
+                        <span class="md-inputfield">
+                            <input id="input" type="text" pInputText/>
+
+                        </span>
+                    </div>
+
+                     <div class="ui-g-12 ui-md-3">
+                        <label for="input">Peso Saco</label>
+                    </div>
+                    <div class="ui-g-12 ui-md-3">
+                        <span class="md-inputfield">
+                            <input id="input" type="text" pInputText/>
+
+                        </span>
+                    </div>
+
+                    <div class="ui-g-12 ui-md-3">
+                        <label for="input"></label>
+                    </div>
+
+
+    
+
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+
+   <div class="ui-g-12">
+            <div class="card card-w-title">
+                <h1>Fórmula de Preparación</h1>
+
+
+                <div class="ui-g form-group">
+
+                    <div class="ui-g-12 ui-md-3">
+                        <label for="input">Formula</label>
+                    </div>
+                    <div class="ui-g-12 ui-md-3">
+                        <span class="md-inputfield">
+                            <input id="input" type="text" pInputText/>
+
+                        </span>
+                    </div>
+
+
+                    <div class="ui-g-12 ui-md-3">
+                        <label for="input">Cantidad Item Base</label>
+                    </div>
+                    <div class="ui-g-12 ui-md-3">
+                        <span class="md-inputfield">
+                            <input id="input" type="text" pInputText/>
+
+                        </span>
+                    </div>
+
+
+                     <div class="ui-g-12 ui-md-3">
+                        <label for="input">%</label>
+                    </div>
+                    <div class="ui-g-12 ui-md-3">
+                        <span class="md-inputfield">
+                            <input id="input" type="text" pInputText/>
+
+                        </span>
+                    </div>
+
+
+
+
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    <div class="ui-g-12">
+        <div class="card card-w-title">
+            <h1></h1>
+            <p-dataTable [value]="contactos"   selectionMode="single" [(selection)]="selectedContacto"
+                [paginator]="true" [rows]="10" [responsive]="true">
+                <header>Lista de Ingredientes (Kg)</header>
+
+                <p-column field="Item" header="Item" [sortable]="true"></p-column>
+                <p-column field="%" header="%" [sortable]="true"></p-column>
+                <p-column field="Cantidad" header="Cantidad" [sortable]="true"></p-column>
+                <p-column field="PesoBalanza" header="Peso Balanza" [sortable]="true"></p-column>
+
+
+            </p-dataTable>
+             <footer>
+                  <div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix" >
+                    <button type="button" pButton  (click)="calcularBase()" label="Calcular Base"></button>
+                    <button type="button" pButton  (click)="showInfo()" label="Procesar"></button>
+                  </div>
+                </footer>
+        </div>
